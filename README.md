@@ -31,32 +31,41 @@
 ## 🗺️ 全体の遷移概要
 
 以下は、ユーザー権限ごとの大まかな画面遷移イメージです。
-　-　👥 一般ユーザー（ログイン済）
-	- ![loginUser](infoReadMe/loginUser.jpg)
-　-　🔐 管理者
-	- ![Admin](infoReadMe/Admin.jpg)
-　-　🚪 未ログインユーザー
-	- ![NotLogin](infoReadMe/notLogin.jpg)
+
+- <div>👥 一般ユーザー（ログイン済）<br>
+  <img src="infoReadMe/loginUser.jpg" alt="一般ユーザーログイン後の画面" width="400"></div>
+
+- <div>🔐 管理者<br>
+  <img src="infoReadMe/Admin.jpg" alt="管理者ログイン後の画面" width="400"></div>
+
+- <div>🚪 未ログインユーザー<br>
+  <img src="infoReadMe/notLogin.jpg" alt="未ログインユーザーの画面" width="400"></div>
 
 
 ## 🖼️ 権限ごとの画面キャプチャ
 
+### 🚪 未ログインユーザー
 
-### 🔒 管理者用画面
+#### 商品一覧画面
 
-#### 管理者ログイン画面
+- <div>右上にログインボタンのみ表示<br>
+  <img src="infoReadMe/capture/guest-product-list.png" alt="未ログインユーザーの商品一覧画面" width="800"></div>
 
-- 管理者用のログインページ
-- ![admin-login](infoReadMe/capture/admin-login.png)
+#### 商品詳細画面
 
-#### 管理者用 商品一覧画面
+- <div>「レビュー投稿にはログインが必要です」メッセージ表示<br>
+  ログインページへのリンクあり<br>
+  <img src="infoReadMe/capture/guest-product-detail.png" alt="未ログインユーザーの商品詳細画面" width="800"></div>
 
-- 管理者用の商品一覧画面
-- ![admin-list](infoReadMe/capture/admin-list.png)
+#### ユーザーログイン画面
 
-#### 管理者用 商品登録画面
-- 商品情報を新規登録
-- ![admin-product-add](infoReadMe/capture/admin-product-add.png)
+- <div>ユーザー用ログインページ<br>
+  <img src="infoReadMe/capture/user-login.png" alt="ユーザーログイン画面" width="800"></div>
+
+#### ユーザー登録画面
+- <div>ユーザー新規登録フォーム<br>
+  <img src="infoReadMe/capture/user-register.png" alt="ユーザー登録画面" width="800"></div>
+
 
 ---
 
@@ -64,41 +73,35 @@
 
 #### 商品一覧画面
 
-- 右上にユーザー名表示
-- ログアウトボタン表示
-- ![user-product-list](infoReadMe/capture/user-product-list.png)
+- <div>右上にユーザー名表示<br>
+  ログアウトボタン表示<br>
+  <img src="infoReadMe/capture/user-product-list.png" alt="一般ユーザーログイン後の商品一覧画面" width="800"></div>
 
 #### 商品詳細画面
 
-- 星の平均点や分布グラフを表示
-- ![user-product-detail](infoReadMe/capture/user-product-detail.png)
+- <div>星の平均点や分布グラフを表示<br>
+  <img src="infoReadMe/capture/user-product-detail.png" alt="一般ユーザーログイン後の商品詳細画面（評価表示）" width="800"></div>
 
-- レビュー投稿フォームが表示される
-- ![posting-form](infoReadMe/capture/posting-form.png)
+- <div>レビュー投稿フォームが表示される<br>
+  <img src="infoReadMe/capture/posting-form.png" alt="レビュー投稿フォーム" width="800"></div>
 
 ---
 
-### 🚪 未ログインユーザー
+### 🔒 管理者用画面
 
-#### 商品一覧画面 
+#### 管理者ログイン画面
 
-- 右上にログインボタンのみ表示
-- ![guest-product-list](infoReadMe/capture/guest-product-list.png)
+- <div>管理者用のログインページ<br>
+  <img src="infoReadMe/capture/admin-login.png" alt="管理者ログイン画面" width="800"></div>
 
-#### 商品詳細画面 
+#### 管理者用 商品一覧画面
 
-- 「レビュー投稿にはログインが必要です」メッセージ表示
-- ログインページへのリンクあり
-- ![guest-product-detail](infoReadMe/capture/guest-product-detail.png)
+- <div>管理者用の商品一覧画面<br>
+  <img src="infoReadMe/capture/admin-list.png" alt="管理者用商品一覧画面" width="800"></div>
 
-#### ユーザーログイン画面
-
-- ユーザー用ログインページ
-- ![user-login](infoReadMe/capture/user-login.png)
-
-#### ユーザー登録画面 
-- ユーザー新規登録フォーム
-- ![user-register](infoReadMe/capture/user-register.png)
+#### 管理者用 商品登録画面
+- <div>商品情報を新規登録<br>
+  <img src="infoReadMe/capture/admin-product-add.png" alt="管理者用商品登録画面" width="800"></div>
 
 ---
 
@@ -106,10 +109,10 @@
 
 | 画面                             | 管理者 | 一般ユーザー（ログイン済） | 未ログインユーザー |
 |----------------------------------|--------|----------------------------|--------------------|
-| 商品一覧画面                     | ×      | ○                          | ○                  |
-| 商品詳細画面                     | ×      | ○（レビュー投稿可）        | ○（レビュー投稿不可） |
-| ユーザーログイン画面             | ×      | ×                          | ○                  |
-| ユーザー登録画面                 | ×      | ×                          | ○                  |
+| 商品一覧画面                     | ○      | ○                          | ○                  |
+| 商品詳細画面                     | ○      | ○（レビュー投稿可）        | ○（レビュー投稿不可） |
+| ユーザーログイン画面             | ○      | ×                          | ○                  |
+| ユーザー登録画面                 | ○      | ×                          | ○                  |
 | 管理者ログイン画面               | ○      | ×                          | ×                  |
 | 管理者用 商品一覧画面            | ○      | ×                          | ×                  |
 | 管理者用 商品登録画面            | ○      | ×                          | ×                  |
